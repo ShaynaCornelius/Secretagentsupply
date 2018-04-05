@@ -11,10 +11,18 @@ body{
 
 /* Header */
 
-header {
+.full-width {
   background-color: black;
+  background-size: cover;
+}
+
+.small-width {
+  width: 960px;
+  margin: 0px auto;
+}
+
+header {
   height: 2.5rem;
-  align-items: center;
 }
 
 header img {
@@ -42,11 +50,16 @@ header span {
   width: 20rem;
   background-color: black;
   color: white;
+  font-family: Helvetica;
+  margin-left: 6rem;
+  position: relative;
+  top: 9rem;
 }
 
 .top-content h3 {
   font-size: 1rem;
   font-weight: bold;
+  font-family: Helvetica;
   padding-top: 2rem;
   padding-bottom: 0.25rem;
   padding-left: 3rem;
@@ -57,6 +70,7 @@ header span {
   font-weight: bold;
   padding-left: 3rem;
   padding-bottom: 2rem;
+  font-family: Helvetica;
 }
 
 nav {
@@ -65,29 +79,37 @@ nav {
   height: 3.5rem;
   color: white;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   color: white;
+  padding-top: 0.75rem;
 }
 
 /* Main Content */
 
 .product-grid {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  align-content: center;
   width: 30%;
+  border: 4px solid black;
 }
 
 .product img {
   height: 9rem;
+  padding: 2rem 2rem;
 }
 
 .product span {
   color: white;
   background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
