@@ -8,17 +8,22 @@ body{
   font-family: Helvetica;
 }
 
-
-/* Header */
-
-.full-width {
-  background-color: black;
-  background-size: cover;
-}
-
 .small-width {
   width: 960px;
   margin: 0px auto;
+}
+
+.main-content {
+  background-color: white;
+  background-size: cover;
+}
+
+
+/* Header */
+
+.header-full-width {
+  background-color: black;
+  background-size: cover;
 }
 
 header {
@@ -38,12 +43,11 @@ header span {
 
 /* Top banner and Nav Bar */
 
-.top-banner {
+.banner-full-width {
   background-image: url("../images/moto.jpeg");
   height: 25rem;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0;
 }
 
 .top-content {
@@ -51,7 +55,6 @@ header span {
   background-color: black;
   color: white;
   font-family: Helvetica;
-  margin-left: 6rem;
   position: relative;
   top: 9rem;
 }
@@ -73,9 +76,12 @@ header span {
   font-family: Helvetica;
 }
 
+.nav-full-width {
+  background-color: firebrick;
+}
+
 nav {
   display: flex;
-  background-color: firebrick;
   height: 3.5rem;
   color: white;
   justify-content: space-between;
@@ -92,14 +98,19 @@ nav a {
 .product-grid {
   display: inline-flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-right: 0;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  align-content: center;
   width: 30%;
   border: 4px solid black;
+  text-align: center;
 }
 
 .product img {
@@ -112,4 +123,28 @@ nav a {
   background-color: black;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-specific {
+}
+
+.location-specific span {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 10rem;
+}
+
+.location-specific h4 {
+  position: relative;
+  top: 1.5rem;
+  padding-bottom: 4rem;
+
 }
