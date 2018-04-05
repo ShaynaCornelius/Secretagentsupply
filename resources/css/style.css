@@ -34,11 +34,13 @@ header img {
   height: 1.5rem;
   padding-left: 0.5rem;
   padding-right: 1rem;
+  padding-top: .5rem;
 }
 
 header span {
   font-size: 1rem;
   color: white;
+  align-items: center;
 }
 
 /* Top banner and Nav Bar */
@@ -101,8 +103,8 @@ nav a {
   justify-content: space-between;
   align-content: center;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-right: 0;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 
 .product {
@@ -139,12 +141,27 @@ nav a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  padding-right: 10rem;
+  padding-right: 13rem;
 }
 
 .location-specific h4 {
   position: relative;
   top: 1.5rem;
   padding-bottom: 4rem;
+}
 
+/* Footer Section */
+
+.footer-full-width {
+  background-color: black;
+  background-size: cover;
+  height: 5rem;
+}
+
+footer {
+  color: white;
+  padding-top: 2rem;
+}
+
+footer span {
 }
