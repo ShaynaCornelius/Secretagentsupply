@@ -95,6 +95,10 @@ nav a {
   padding-top: 0.75rem;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 /* Main Content */
 
 .product-grid {
@@ -118,6 +122,7 @@ nav a {
 .product img {
   height: 9rem;
   padding: 2rem 2rem;
+  
 }
 
 .product span {
@@ -164,4 +169,35 @@ footer {
 }
 
 footer span {
+}
+
+/* Responsize Style Changes */
+
+@media only screen and (max-width: 1024px) {
+
+
+
+  nav a {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product img {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
