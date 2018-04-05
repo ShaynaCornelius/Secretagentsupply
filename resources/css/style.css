@@ -27,7 +27,9 @@ body{
 }
 
 header {
-  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
 }
 
 header img {
@@ -122,7 +124,7 @@ nav a {
 .product img {
   height: 9rem;
   padding: 2rem 2rem;
-  
+
 }
 
 .product span {
@@ -138,20 +140,19 @@ nav a {
 }
 
 .location-specific {
+  width: 35%;
 }
 
 .location-specific span {
+  display: block;
+  padding: 1rem 2rem;
   background-color: black;
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 13rem;
 }
 
 .location-specific h4 {
   position: relative;
-  top: 1.5rem;
+  top: .5rem;
   padding-bottom: 4rem;
 }
 
@@ -168,14 +169,10 @@ footer {
   padding-top: 2rem;
 }
 
-footer span {
-}
 
 /* Responsize Style Changes */
 
 @media only screen and (max-width: 1024px) {
-
-
 
   nav a {
     display: none;
@@ -200,4 +197,60 @@ footer span {
     width: 50%;
     margin: 0 auto;
   }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .small-width {
+    width: 470px;
+    align-content: center;
+  }
+
+  .banner-full-width {
+    height: 15rem;
+  }
+
+  .top-content {
+    width: 100%;
+    top: 10rem;
+  }
+
+  .top-content h3 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  .top-content h1 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .product-grid,
+  .location-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product.watch {
+    display: none
+  }
+
+  .product {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .location-specific {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .location-specific h4 {
+    padding-bottom: 1.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
 }
